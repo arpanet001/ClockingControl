@@ -8,6 +8,10 @@ export const navigationlinks = [
     ref: "/staff",
   },
   {
+    name: "DEPARTMENT PAGE",
+    ref: "/department",
+  },
+  {
     name: "VIEW TIME IN AND OUT",
     ref: "/time",
   },

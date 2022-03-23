@@ -5,6 +5,7 @@ import Header from "./screens/header/Header";
 import IndexStaffs from "./screens/staffs/IndexStaffs";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import IndexDepartments from "./screens/departments/IndexDepartments";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/staff">
             <IndexStaffs />
+          </Route>
+          <Route path="/department">
+            <IndexDepartments />
           </Route>
           <Route path="/time"></Route>
           <Route path="/contact"></Route>

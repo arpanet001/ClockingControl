@@ -2064,11 +2064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SUN\\source\\repos\\clocking\\clockingapi\\clockingapi.csproj",
+      "projectUniqueName": "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\clockingapi.csproj",
       "projectName": "clockingapi",
-      "projectPath": "C:\\Users\\SUN\\source\\repos\\clocking\\clockingapi\\clockingapi.csproj",
+      "projectPath": "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\clockingapi.csproj",
       "packagesPath": "C:\\Users\\SUN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SUN\\source\\repos\\clocking\\clockingapi\\obj\\",
+      "outputPath": "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
