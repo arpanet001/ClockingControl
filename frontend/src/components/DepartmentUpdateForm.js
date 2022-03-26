@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Constants from "../utilities/Constants";
 
-export default function DepartmentCreateForm(props) {
+export default function DepartmentUpdateForm(props) {
   const initialFormData = Object.freeze({
-    departmentName: "Enter the department name",
+    departmentName: props.department.departmentName,
   });
   const [formData, setFormData] = useState(initialFormData);
 
@@ -17,19 +17,19 @@ export default function DepartmentCreateForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const departmentToCreate = {
-      departmentId: 0,
+    const departmentToUpdate = {
+      departmentId: props.department.departmentId,
       departmentName: formData.departmentName,
     };
 
     const url = Constants.API_URL_UPDATE_DEPARTMENT;
 
     fetch(url, {
-      method: "POST",
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(departmentToCreate),
+      body: JSON.stringify(departmentToUpdate),
     })
       .then((response) => response.json())
       .then((responseFromServer) => {
@@ -40,12 +40,14 @@ export default function DepartmentCreateForm(props) {
         alert(error);
       });
 
-    props.onDepartmentCreated(departmentToCreate);
+    props.onDepartmentUpdated(departmentToUpdate);
   };
 
   return (
     <form className="w-100 px-5">
-      <h1 className="mt-5">Create New Department</h1>
+      <h1 className="mt-5">
+        Updating the Department with name "{props.department.departmentName}"
+      </h1>
       <div className="mt-5">
         <label className="h3 form-label ">Department Name</label>
         <input
@@ -63,7 +65,7 @@ export default function DepartmentCreateForm(props) {
           Submit
         </button>
         <button
-          onClick={() => props.onDepartmentCreated(null)}
+          onClick={() => props.onDepartmentUpdated(null)}
           className="btn btn-secondary btn-lg w-100 mt-3"
         >
           Cancel
