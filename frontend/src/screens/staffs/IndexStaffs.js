@@ -145,7 +145,7 @@ export default function IndexStaffs() {
           onClick={() => setStaffs([])}
           className="btn btn-dark btn-lg w-100"
         >
-          Empty Users
+          Empty Staff
         </button>
       </div>
     );
