@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\clockingapi.csproj": {}
+    "C:\\Users\\humph\\Desktop\\Cded\\ClockingControl\\backend\\clockingapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\clockingapi.csproj": {
+    "C:\\Users\\humph\\Desktop\\Cded\\ClockingControl\\backend\\clockingapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\clockingapi.csproj",
+        "projectUniqueName": "C:\\Users\\humph\\Desktop\\Cded\\ClockingControl\\backend\\clockingapi.csproj",
         "projectName": "clockingapi",
-        "projectPath": "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\clockingapi.csproj",
-        "packagesPath": "C:\\Users\\SUN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SUN\\source\\repos\\Clocking Control\\backend\\obj\\",
+        "projectPath": "C:\\Users\\humph\\Desktop\\Cded\\ClockingControl\\backend\\clockingapi.csproj",
+        "packagesPath": "C:\\Users\\humph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\humph\\Desktop\\Cded\\ClockingControl\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\SUN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\humph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

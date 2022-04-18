@@ -6,7 +6,7 @@ public static class TimeRepository{
   }
  }
 
- public async static Task<bool>CreateTimeAsync(Time timeToCreate)
+ public async static Task<bool> CreateTimeAsync(Time timeToCreate)
  {
    using (var db = new clockingdbcontext())
   {
