@@ -3,8 +3,10 @@ using Microsoft.EntityFrameworkCore;
 public class clockingdbcontext:DbContext
 {
  public DbSet<Staff> Staffs { get; set; }
- public DbSet<Time> Times {get;set;}
+ public DbSet<Time> TimeDetails {get;set;}
  public DbSet<Department> Departments {get;set;}
+ public DbSet<Clocking> Clockings {get;set;}
+
 
  protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder) => dbContextOptionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=clockingdb;Integrated Security=true");
 

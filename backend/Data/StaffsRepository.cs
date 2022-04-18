@@ -7,9 +7,9 @@ public static class StaffsRepository{
   }
  }
 
- public async static Task<Staff> GetStaffByIdAsync(int StaffId ){
+ public async static Task<Staff> GetStaffByPersonalFileNumberAsync(string PersonalFileNumber ){
   using (var db = new clockingdbcontext()){
-   return await db.Staffs.FirstOrDefaultAsync(Staff => Staff.StaffId == StaffId);
+   return await db.Staffs.FirstOrDefaultAsync(Staff => Staff.PersonalFileNumber == PersonalFileNumber);
   }
  }  
 
@@ -47,13 +47,13 @@ public static class StaffsRepository{
    
   }
  }
- public async static Task<bool> DeleteStaffAsync(int StaffId)
+ public async static Task<bool> DeleteStaffAsync(string PersonalFileNumber)
  {
   using (var db = new clockingdbcontext())
   {
    try
    {
-    Staff StaffToDelete = await GetStaffByIdAsync(StaffId);
+    Staff StaffToDelete = await GetStaffByPersonalFileNumberAsync(PersonalFileNumber);
     db.Remove(StaffToDelete);
     return await db.SaveChangesAsync() >= 1 ;
     

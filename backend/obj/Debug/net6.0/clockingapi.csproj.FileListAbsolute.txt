@@ -181,3 +181,15 @@ C:\Users\SUN\source\repos\Clocking Control\backend\obj\Debug\net6.0\clockingapi.
 C:\Users\SUN\source\repos\Clocking Control\backend\obj\Debug\net6.0\ref\clockingapi.dll
 C:\Users\SUN\source\repos\Clocking Control\backend\obj\Debug\net6.0\clockingapi.pdb
 C:\Users\SUN\source\repos\Clocking Control\backend\obj\Debug\net6.0\clockingapi.genruntimeconfig.cache
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.Http.WebHost.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\SUN\source\repos\Clocking Control\backend\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

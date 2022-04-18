@@ -21,6 +21,27 @@ namespace clockingapi.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Clocking", b =>
+                {
+                    b.Property<string>("PersonalFileNumber")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("PersonalFileNumber");
+
+                    b.ToTable("Clockings");
+                });
+
             modelBuilder.Entity("Department", b =>
                 {
                     b.Property<int>("DepartmentId")
@@ -67,10 +88,6 @@ namespace clockingapi.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -94,8 +111,6 @@ namespace clockingapi.Data.Migrations
                     b.HasKey("StaffId");
 
                     b.ToTable("Staffs");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Staff");
 
                     b.HasData(
                         new
@@ -174,7 +189,9 @@ namespace clockingapi.Data.Migrations
 
             modelBuilder.Entity("Time", b =>
                 {
-                    b.HasBaseType("Staff");
+                    b.Property<string>("PersonalFileNumber")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("ClockInTime")
                         .HasColumnType("datetime2");
@@ -182,7 +199,19 @@ namespace clockingapi.Data.Migrations
                     b.Property<DateTime>("ClockOutTime")
                         .HasColumnType("datetime2");
 
-                    b.HasDiscriminator().HasValue("Time");
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("PersonalFileNumber");
+
+                    b.ToTable("TimeDetails");
                 });
 #pragma warning restore 612, 618
         }
