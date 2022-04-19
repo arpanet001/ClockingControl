@@ -48,6 +48,8 @@ public class Clockingrepository{
 
             var time = new Time ();
             time.PersonalFileNumber = personalFileNumber;
+            time.FirstName = user.FirstName;
+            time.LastName = user.LastName;
 
             //var timerepository = new TimeRepository();
             await TimeRepository.UpdateTimeAsync(time);

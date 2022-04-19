@@ -18,6 +18,7 @@ builder.Services.AddCors(options => {
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(SwaggerGenOptions => {
@@ -33,16 +34,13 @@ app.UseSwaggerUI(swaggerUIOptions =>
     swaggerUIOptions.RoutePrefix = string.Empty;
 }
 );
-
-
 app.UseHttpsRedirection();
-
 app.UseCors("CORSPolicy");
-
-
 app.UseAuthorization();
 app.MapControllers();
 
+//Staff EndPoints
+#region  Staff EndPoints
 app.MapGet("/get-all-staffs",async () => await StaffsRepository.GetStaffsAsync())
 .WithTags("STAFFS ENDPOINTS");
 ;
@@ -88,7 +86,10 @@ app.MapDelete("/delete-staff-by-personalfilenumber/{PersonalFileNumber}",async(s
         return Results.BadRequest();
     }
 }).WithTags("STAFFS ENDPOINTS");
+#endregion
 
+//Time EndPoints
+#region TimeEndPoints
 app.MapGet("/get-all-staffs-clocking-and-clockout-time",async () => await TimeRepository.GetTimeDetailsAsync()).
 WithTags("TIME ENDPOINTS");
 
@@ -131,7 +132,10 @@ app.MapDelete("/delete-time-details-by-id/{StaffId}",async(string PersonalFileNu
         return Results.BadRequest();
     }
 }).WithTags("TIME ENDPOINTS");
+#endregion
 
+//Department EndPoints
+#region  DepartmentEndPoints
 app.MapGet("/get-all-departments",async () => await DepartmentRepository.GetDepartmentAsync()).WithTags("DEPARTMENT ENDPOINTS");
 
 app.MapGet("/get-department-by-id/{DepartmentId}",async(int DepartmentId)=>{
@@ -173,7 +177,10 @@ app.MapDelete("/delete-department-by-id/{DepartmentId}",async(int DepartmentId)=
         return Results.BadRequest();
     }
 }).WithTags("DEPARTMENT ENDPOINTS");
+#endregion
 
+//Clocking EndPoints
+#region  ClockingEndPoints
 app.MapPost("/create-clocking",async(Clocking clockingToCreate)=>{
     bool createSuccessful = await Clockingrepository.CreatePersonalFileNumberAsync(clockingToCreate);
     if(createSuccessful){
@@ -216,6 +223,6 @@ app.MapDelete("/delete-personalfilenumber",async(string PersonalFileNumber)=>{
         return Results.BadRequest();
     }
 }).WithTags("CLOCKING ENDPOINTS");
-
+#endregion
 
 app.Run();

@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
-public class Clocking{
+public class Clocking
+{
  [Required]
  [MaxLength(100)]
  [Key]
@@ -13,7 +14,4 @@ public class Clocking{
  [Required]
  [MaxLength(100)]
  public string LastName { get; set; } = string.Empty;
-
- 
-
 }

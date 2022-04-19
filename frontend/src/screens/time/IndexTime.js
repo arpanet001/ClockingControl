@@ -44,31 +44,19 @@ export default function IndexTime() {
         <table className="table table-bordered borderdark">
           <thead>
             <tr>
-              <th scope="col">StaffId</th>
               <th scope="col">Personal File Number</th>
-              <th scope="col">Department Id</th>
-              <th scope="col">Department</th>
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
-              <th scope="col">Designation</th>
-              <th scope="col">Registered</th>
-              <th scope="col">Active</th>
               <th scope="col">ClockInTime</th>
               <th scope="col">ClockOutTime</th>
             </tr>
           </thead>
           <tbody>
             {time.map((time) => (
-              <tr key={time.staffId}>
-                <th scope="row">{time.staffId}</th>
-                <td>{time.personalFileNumber}</td>
-                <td>{time.departmentId}</td>
-                <td>{time.department}</td>
+              <tr key={time.personalFileNumber}>
+                <th scope="row">{time.personalFileNumber}</th>
                 <td>{time.firstName}</td>
                 <td>{time.lastName}</td>
-                <td>{time.designation}</td>
-                <td>{time.registered}</td>
-                <td>{time.active}</td>
                 <td>{time.clockInTime}</td>
                 <td>{time.clockOutTime}</td>
               </tr>
