@@ -266,6 +266,7 @@ C:\Users\humph\Desktop\Cded\ClockingControl\backend\obj\Debug\net6.0\clockingapi
 C:\Users\humph\Desktop\Cded\ClockingControl\backend\obj\Debug\net6.0\ref\clockingapi.dll
 C:\Users\humph\Desktop\Cded\ClockingControl\backend\obj\Debug\net6.0\clockingapi.pdb
 C:\Users\humph\Desktop\Cded\ClockingControl\backend\obj\Debug\net6.0\clockingapi.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\SUN\Desktop\ClockingControl-master\backend\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\SUN\Desktop\ClockingControl-master\backend\bin\Debug\net6.0\appsettings.json
 C:\Users\SUN\Desktop\ClockingControl-master\backend\bin\Debug\net6.0\clockingapi.exe
@@ -339,3 +340,5 @@ C:\Users\SUN\Desktop\ClockingControl-master\backend\obj\Debug\net6.0\clockingapi
 C:\Users\SUN\Desktop\ClockingControl-master\backend\obj\Debug\net6.0\ref\clockingapi.dll
 C:\Users\SUN\Desktop\ClockingControl-master\backend\obj\Debug\net6.0\clockingapi.pdb
 C:\Users\SUN\Desktop\ClockingControl-master\backend\obj\Debug\net6.0\clockingapi.genruntimeconfig.cache
+=======
+>>>>>>> 9222a77f4babbb079379eac6a6ccc97e46cab29d
